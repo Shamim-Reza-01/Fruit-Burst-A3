@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit-Brust</title>
+    
+    <!-- css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primaryColor: "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="navbar bg-primaryColor h-24 rounded-full w-4/5 mx-auto my-12">
+                <div>
+                    <ul class="flex gap-10 justify-center pl-5 text-white">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+    
+                
+                <div class="flex-1 justify-end  ">
+                  <a class="btn btn-ghost md:pr-64   normal-case text-xl text-white">
+                    <img class="w-12" src="images/logo.png" alt="">Fruit Burst</a>
+                </div>
+                <div class="flex-none gap-2">
+                  <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered  rounded-full  "  />
+                  </div>
+                  <!-- <div class="dropdown dropdown-end">
+                    
+                    <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div> -->
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main class="w-4/5 mx-auto">
+        <!-- fast section  -->
+        <section class="my-24">
+            <div class="carousel w-full ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <div>
+                    <img src="images/banner1.png" class="w-full" />
+                  </div>
+                  <div class="absolute text-white text-center top-28 left-52">
+                    <h1 class="text-7xl font-extrabold ">
+                        Exotic tastes at your <br> doorstep
+                    </h1>
+                    <p class=" my-6">
+                        We supply highly quality organic products
+                    </p>
+                    <button class="bg-primaryColor btn rounded-md border-none mt-3 text-white">Shop Now</button>
+                  </div>
+                  
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                
+              </div>
+        </section>
+        <!-- secend section  -->
+        <section>
+            <div>
+                <div class=" flex justify-between">
+                    <div>
+                        <h2 class="text-5xl font-extrabold">
+                            Deal of the day
+                        </h2>
+                        <p class=" my-6 text-[#12121299]" >
+                            Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+                        </p>
+                    </div>
+                    <!-- time  -->
+                    <div>
+                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                            <div class="flex flex-col text-[#12121299]">
+                              <span class="countdown font-mono text-black text-5xl">
+                                <span style="--value:15;"></span>
+                              </span>
+                              days
+                            </div> 
+                            <div class="flex flex-col text-[#12121299]">
+                              <span class="countdown font-mono text-black text-5xl">
+                                <span style="--value:10;"></span>
+                              </span>
+                              hours
+                            </div> 
+                            <div class="flex flex-col text-[#12121299]">
+                              <span class="countdown font-mono text-black text-5xl">
+                                <span style="--value:24;"></span>
+                              </span>
+                              min
+                            </div> 
+                            <div class="flex flex-col text-[#12121299]">
+                              <span class="countdown font-mono text-black text-5xl">
+                                <span style="--value:16;"></span>
+                              </span>
+                              sec
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <!-- card line start  -->
+                <div>
+                    <div class="flex gap-6 my-6">
+                        <!-- fast card     -->
+                        <div class="card w-96 bg-white  shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            
+                            <div class="card-body items-center py-8 text-center">
+                              <h2 class="card-title">12.90$ - 18.85$</h2>
+                              <hr class="w-4/6 mt-5 ml-6">
+                              <p>Apples</p>
+                              <div class="rating py-6">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                              <P class="text-primaryColor">
+                                Details
+                              </P>
+                            </div>
+                          </div>
+                        <!-- 2 card     -->
+                        <div class="card w-96 bg-white  shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            
+                            <div class="card-body items-center py-8 text-center">
+                              <h2 class="card-title">12.90$ - 18.85$</h2>
+                              <hr class="w-4/6 mt-5 ml-6">
+                              <p>Orange</p>
+                              <div class="rating py-6">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                              <P class="text-primaryColor">
+                                Details
+                              </P>
+                            </div>
+                          </div>
+                        <!-- 3 card     -->
+                        <div class="card w-96 bg-white  shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            
+                            <div class="card-body items-center py-8 text-center">
+                              <h2 class="card-title">12.90$ - 18.85$</h2>
+                              <hr class="w-4/6 mt-5 ml-6">
+                              <p>Red Dragon</p>
+                              <div class="rating py-6">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                              <P class="text-primaryColor">
+                                Details
+                              </P>
+                            </div>
+                          </div>
+                        <!-- 4 card     -->
+                        <div class="card w-96 bg-white  shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            
+                            <div class="card-body items-center py-8 text-center">
+                              <h2 class="card-title">12.90$ - 18.85$</h2>
+                              <hr class="w-4/6 mt-5 ml-6">
+                              <p>Banana</p>
+                              <div class="rating py-6">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                              <P class="text-primaryColor">
+                                Details
+                              </P>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="text-center mt-10 ">
+                    <button class="bg-primaryColor btn rounded-md border-none mt-3 text-white">Shop All</button>
+                </div>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>
